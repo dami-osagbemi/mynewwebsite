@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to New Bride</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        #container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function whenclicked() {
+            alert("I have been clicked!")
+          document.getElementById("subheading").style.backgroundColor = "blue";
+        }
+        //var but = document.getElementById("mybutton");
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var but = document.getElementById("mybutton");
+            but.addEventListener("click", whenclicked);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <h4>New Bride Domain</h4>
+        <h6 id="subheading">You are Welcome to New Bride official Website!</h6>
+        <marquee id="slide" bgcolor="#ccccff" height="30px" direction="right">
+            You are here because you need something unique for that beautiful day!
+        </marquee>
+        <button id="mybutton">Click me!</button>
+    </div>
+
+    
+</body>
+
+</html>
